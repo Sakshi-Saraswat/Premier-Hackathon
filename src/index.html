@@ -25,19 +25,19 @@
             <div class="grid-container">
                 <div>
                     <p class="subtitle">NAME</p>
-                    <p class="insidetext">MANAGER NAME</p>
+                    <p class="insidetext" id="inside1">PLAYER NAME</p>
                 </div>
                 <div>
                     <p class="subtitle">AGE</p>
-                    <p class="insidetext">AGE</p>
+                    <p class="insidetext" id="inside2">AGE</p>
                 </div>
                 <div>
                     <p class="subtitle">TEAM NAME</p>
-                    <p class="insidetext">TEAM NAME</p>
+                    <p class="insidetext" id="inside3">TEAM NAME</p>
                 </div>
                 <div>
                     <p class="subtitle">TROPHIES</p>
-                    <p class="insidetext">NUMBER OF TROPHIES</p>
+                    <p class="insidetext" id="inside4">NUMBER OF TROPHIES</p>
                 </div>
             </div>
         </div>
@@ -46,12 +46,15 @@
             <div class="formation-container">
                 <img src="assets/group-5.svg" class="playground">
                 <img src="./assets/goalkeeper.svg" alt="player" class="goalkeeper">
-                <div class="player-container defence">
+                <div id="forward" class="player-container">
                 </div>
-                <div class="player-container midfield">
+                <div id="midfield" class="player-container">
+                    
                 </div>
-                <div class="player-container forward">
+                <div id="defence" class="player-container">
                 </div>
+               
+                
             </div>
         </div>
     </section>
@@ -69,7 +72,7 @@
             <div class="dropdown">
                 <p class="subtitle non-bold">Debut Year <span id="debutflag"></span> <img src="./assets/down-arrow.svg"
                         alt="down">
-                    <div class="dropdown-list" id="dropdown-debut">
+                    <div class="dropdown-list" id="dropdown-debut" onclick="filterByDebut(year)">
                     </div>
                 </p>
             </div>
@@ -77,7 +80,7 @@
             <div class="dropdown">
                 <p class="subtitle non-bold">Position <span id="positionflag"></span> <img src="./assets/down-arrow.svg"
                         alt="down">
-                    <div class="dropdown-list" id="dropdown-position">
+                    <div class="dropdown-list" id="dropdown-position" onclick="filterByPosition(position)">
                     </div>
                 </p>
             </div>
@@ -97,7 +100,7 @@
 
             <div class="goButton team-selected" id="goButton">Go</div>
 
-            <div class="dropdown">
+            <div class="dropdown"  >
                 <p class="subtitle non-bold">Award <span id="awardflag"></span> <img src="./assets/down-arrow.svg"
                         alt="down">
                     <div class="dropdown-list" id="dropdown-award">
@@ -112,14 +115,17 @@
             </div>
 
             <p class="subtitle non-bold award-selected">No. of Awards <input type="text" class="inputText"
-                    id="awardCount"></p>
+                id="awardCount"></p>
 
         </div>
         <div id="player-container">
 
         </div>
     </section>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="link.js"></script>
+
 </body>
 
 </html>

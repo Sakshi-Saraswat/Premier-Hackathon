@@ -106,7 +106,6 @@ body {
     align-items: center;
     /* margin: 5px; */
 }
-
 .title-container .subtitle {
     margin: 5px;
 }
@@ -164,28 +163,23 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.defence {
-    top: 63%;
+#forward {
+   top:63%;
 }
-
-.midfield {
-    top: 40%;
+.pic {
+    margin:0px 22px;
 }
-
-.forward {
-    top: 20%;
+#midfield {
+    top:40%;
 }
-
-.defenders {
-    padding: 20px;
+.pic1 {
+    margin:0px 21px;
 }
-
-.midfielders {
-    padding: 15px;
+#defence {
+    top:20%;
 }
-
-.forwards {
-    padding: 10px;
+.pic3 {
+    margin:0px 19px;
 }
 
 .footballer-card {
